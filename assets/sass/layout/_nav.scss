@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    &__logo{
+        & p{
+            font-size: xx-large;
+            font-weight: bold;
+            position: relative;
+            & span {
+                position: absolute;
+                font-size: medium;
+                top: 0;
+                font-weight: normal;
+            }
+        }
+    }
+    &__lista {
+        display: flex;
+    }
+    &__icon {
+        margin-right: 2rem;
+        list-style: none;
+        font-size: x-large;
+        &--hide {
+            display: none;
+            @include respond-to("md"){
+                display: block;
+            }
+        }
+        &--hamb {
+            font-size: $xxx-large;
+            @include respond-to("md"){
+                font-size: x-large;
+            }
+        }
+    }
+
+}
+

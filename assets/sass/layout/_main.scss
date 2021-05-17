@@ -1,0 +1,18 @@
+.main {
+    margin-top: 1rem;
+    &--titulo{
+        text-align: left;
+        margin-left: 2rem;
+    }
+    &__contenedor{
+        @include respond-to("md"){
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+    &__article {
+        flex-basis:calc(25% - 4rem);
+    }
+}
